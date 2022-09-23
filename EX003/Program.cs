@@ -32,7 +32,7 @@ void Search(int[,] matrix, int num)
     }
     if(search == 0)
     {
-        Console.WriteLine("Такого элемента нет");
+        Console.WriteLine($"Элемента {num} нет в массиве");
     }
 }
 
