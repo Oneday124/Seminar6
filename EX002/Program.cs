@@ -1,6 +1,6 @@
 ﻿// В двумерном массиве nxk заменить четные элементы на противоположные
 
-void PrintArray(int [,] array, int n, int k)
+void PrintArray(int [,] array)
 {
     for(int i = 0; i < array.GetLength(0); i++)
     {
@@ -11,17 +11,17 @@ void PrintArray(int [,] array, int n, int k)
     Console.WriteLine();
     }
 }
-void fillArray(int [,] array, int n, int k)
+void fillArray(int [,] array, int min, int max)
 {
     for(int i = 0; i < array.GetLength(0); i++)
     {
         for(int j = 0; j < array.GetLength(1); j++)
         {
-            array[i,j] = new Random().Next(1, 10);
+            array[i,j] = new Random().Next(min, max);
         }
     }
 }
-void Processing(int [,] array, int n, int k)
+void Processing(int [,] array)
 {
     for(int i = 0; i < array.GetLength(0); i++)
     {
@@ -41,8 +41,8 @@ Console.WriteLine("Введите количество столбцов в ма�
 int k = int.Parse(Console.ReadLine() ??"0");
 
 int[,] array = new int[n,k];
-fillArray(array, n, k);
-PrintArray(array, n, k);
+fillArray(array, 10, 100);
+PrintArray(array);
 Console.WriteLine();
-Processing(array, n, k);
-PrintArray(array, n, k);
+Processing(array);
+PrintArray(array);
