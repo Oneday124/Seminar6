@@ -37,7 +37,7 @@ void Search(int[,] matrix, int num)
 }
 
 
-int [,] matrix = new int[n,n];
+int [,] matrix = new int[5,5];
 FillMatrix(matrix, 1, 10);
 PrintMatrix(matrix);
 Console.WriteLine("Введите значение элемента массива: ");
