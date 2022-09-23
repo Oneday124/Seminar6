@@ -41,8 +41,6 @@ Console.WriteLine("Введите количество столбцов в ма�
 int k = int.Parse(Console.ReadLine() ??"0");
 
 int[,] array = new int[n,k];
-PrintArray(array, n, k);
-Console.WriteLine();
 fillArray(array, n, k);
 PrintArray(array, n, k);
 Console.WriteLine();
