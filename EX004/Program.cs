@@ -25,8 +25,10 @@ void SumMatrix(int[,] matrix)
     }
     Console.Write($"Сумма элементов массива по диагонали = {sum}");
 }
+Console.WriteLine("Введите размерность матрицы nxn: ");
+int n = int.Parse(Console.ReadLine() ??"0");
 
-int [,] matrix = new int[5,5];
+int [,] matrix = new int[n,n];
 FillMatrix(matrix, 1, 10);
 PrintMatrix(matrix);
 SumMatrix(matrix);

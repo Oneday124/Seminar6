@@ -36,8 +36,6 @@ void Search(int[,] matrix, int num)
     }
 }
 
-Console.WriteLine("Введите размерность матрицы nxn: ");
-int n = int.Parse(Console.ReadLine() ??"0");
 
 int [,] matrix = new int[n,n];
 FillMatrix(matrix, 1, 10);
