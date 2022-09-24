@@ -32,6 +32,7 @@ int[,] Transposition(int[,] matrix)
         }
     }
     return transposition;
+
 }
 
 Console.WriteLine("Введите количество строк в матрице: ");
